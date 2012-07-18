@@ -5,10 +5,10 @@ Summary:        The FIS-GT.M database
 
 License:        AGPLv3
 URL:            http://sourceforge.net/projects/fis-gtm
-Source0:        https://github.com/luisibanez/fis-gtm/tarball/57f2d89
+Source0:        https://github.com/luisibanez/fis-gtm/tarball/fis-gtm-g57f2d89.tar.gz
 
-BuildRequires:  cmake,gcc
-Requires:       
+BuildRequires:  libicu-devel, locales, tcsh, ncurses-devel, gnupg, zlib-devel, libgcrypt-devel, gpgme-devel, glibc-devel, elfutils-libelf-devel, gcc-multilib, cmake
+Requires:       libicu-devel
 
 %description
 GT.M is a database engine with scalability proven in large real-time
