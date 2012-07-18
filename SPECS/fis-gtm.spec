@@ -7,7 +7,7 @@ License:        AGPLv3
 URL:            http://sourceforge.net/projects/fis-gtm
 Source0:        https://github.com/luisibanez/fis-gtm/tarball/fis-gtm-g57f2d89.tar.gz
 
-BuildRequires:  libicu-devel, locales, tcsh, ncurses-devel, gnupg, zlib-devel, libgcrypt-devel, gpgme-devel, glibc-devel, elfutils-libelf-devel, gcc-multilib, cmake
+BuildRequires:  libicu-devel, tcsh, ncurses-devel, gnupg, zlib-devel, libgcrypt-devel, gpgme-devel, glibc-devel, elfutils-libelf-devel, cmake
 Requires:       libicu-devel
 
 %description
@@ -42,7 +42,7 @@ events that include changes to application logic and schema.
 
 
 %build
-%configure
+%cmake .
 make %{?_smp_mflags}
 
 
